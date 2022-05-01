@@ -1,16 +1,131 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+:root {
+  --main-color: black;
+  --second-color: white;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body,
+#__next,
+.container {
+  height: 100%;
 }
 
 * {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
 .container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+
+nav {
+  text-align: left;
+}
+
+.website {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.website:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 20px auto;
+  padding: 0 10px;
+  max-width: 800px;
+}
+
+.image-container {
+  margin: auto;
+  width: 200px;
+}
+
+.image-container img {
+  border-radius: 2rem;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  margin-bottom: 50px;
+}
+
+.description {
+  margin-bottom: 30px;
+  color: rgb(34, 34, 34);
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--main-color);
+  padding: 1rem;
+  color: var(--second-color);
+  border-radius: 1rem;
+  transition-duration: 0.5s;
+  font-weight: 500;
+}
+
+.button:hover {
+  background-color: lightgray;
+  color: black;
+  transition-duration: 0.5s;
+}
+
+footer {
+  margin-top: auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.phone {
+  margin-right: auto;
+  width: 200px;
+  text-align: left;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  margin: auto;
+}
+
+.address {
+  margin-left: auto;
+  width: 200px;
 }
